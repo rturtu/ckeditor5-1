@@ -74,7 +74,8 @@
     "@ckeditor/ckeditor5-utils": "^25.0.0",
     "@ckeditor/ckeditor5-watchdog": "^25.0.0",
     "@ckeditor/ckeditor5-widget": "^25.0.0",
-    "@ckeditor/ckeditor5-word-count": "^25.0.0"
+    "@ckeditor/ckeditor5-word-count": "^25.0.0",
+    "@wwalc/ckeditor5-emoji": "^11.0.2"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-comments": ">=24.0.0",
@@ -161,12 +162,8 @@
     "check-dependencies": "ckeditor5-dev-tests-check-dependencies"
   },
   "lint-staged": {
-    "**/*.js": [
-      "eslint --quiet"
-    ],
-    "**/*.css": [
-      "stylelint --quiet --allow-empty-input"
-    ],
+    "**/*.js": ["eslint --quiet"],
+    "**/*.css": ["stylelint --quiet --allow-empty-input"],
     "**/(*.{js,css}|package.json)": [
       "ckeditor5-dev-tests-check-dependencies --quiet"
     ]
@@ -190,13 +187,9 @@
       "external/*/external/*/packages/**/frontend",
       "."
     ],
-    "nohoist": [
-      "**/husky"
-    ]
+    "nohoist": ["**/husky"]
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "hooks": {}
   }
 }
