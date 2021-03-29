@@ -1,6 +1,6 @@
 {
   "name": "@rturtu/ckeditor5-inline-emoji-build",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom build of CKEditor5",
   "keywords": [
     "ckeditor5-build",
