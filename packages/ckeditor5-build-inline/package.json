@@ -1,6 +1,6 @@
 {
   "name": "@rturtu/ckeditor5-inline-emoji-build",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Custom build of CKEditor5",
   "keywords": [
     "ckeditor5-build",
@@ -21,7 +21,9 @@
     "framework"
   ],
   "main": "./build/ckeditor.js",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "dependencies": {
     "@ckeditor/ckeditor5-adapter-ckfinder": "^25.0.0",
     "@ckeditor/ckeditor5-autoformat": "^25.0.0",
