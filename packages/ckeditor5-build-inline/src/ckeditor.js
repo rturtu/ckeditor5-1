@@ -91,33 +91,44 @@ InlineEditor.defaultConfig = {
 		],
 	},
 	image: {
-		toolbar: [
-			"imageStyle:alignLeft",
-			"imageStyle:alignCenter",
-			"imageStyle:alignRight",
-			"|",
-			"resizeImage",
-			"|",
-			"imageTextAlternative",
-		],
+		// Configure the available styles.
+		styles: ["alignLeft", "alignCenter", "alignRight"],
+
+		// Configure the available image resize options.
 		resizeOptions: [
 			{
-				name: "resizeImage: original",
+				name: "resizeImage:original",
 				label: "Original",
 				value: null,
+				icon: "original",
 			},
 			{
 				name: "resizeImage:50",
 				label: "50%",
 				value: "50",
+				icon: "medium",
 			},
 			{
 				name: "resizeImage:75",
 				label: "75%",
 				value: "75",
+				icon: "large",
 			},
 		],
-		styles: ["alignLeft", "alignCenter", "alignRight"],
+
+		// You need to configure the image toolbar, too, so it shows the new style
+		// buttons as well as the resize buttons.
+		toolbar: [
+			"imageStyle:alignLeft",
+			"imageStyle:alignCenter",
+			"imageStyle:alignRight",
+			"|",
+			"resizeImage:50",
+			"resizeImage:75",
+			"resizeImage:original",
+			"|",
+			"imageTextAlternative",
+		],
 	},
 	table: {
 		contentToolbar: [
